@@ -1,0 +1,1 @@
+import { DB, type Env } from '../../utils/kv'; export type Q={id:string;level:number;q:string;a:string;tags?:string[]}; export async function addQuestion(env:Env,q:Q){await DB.putQ(env,q.id,q);return q;} export async function getQuestion(env:Env,id:string){return await DB.getQ(env,id);} export async function listQuestions(env:Env){return await DB.listQ(env);}\n

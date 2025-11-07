@@ -1,0 +1,1 @@
+export function wantsImage(t:string){return/(تصویر|عکس|image|photo|component|قطعه)/i.test(t);} export function pickImageUrl(q:string){const e=encodeURIComponent(q.trim().slice(0,64)); return `https://picsum.photos/seed/${e}/800/480`; }\n

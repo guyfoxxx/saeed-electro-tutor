@@ -1,0 +1,1 @@
+import { routerInfer } from '../../models/router'; import { classifyIntent } from './classify'; export async function aiAnswer(text:string,env:any){const purpose=classifyIntent(text); return await routerInfer({purpose,input:text},env);}\n

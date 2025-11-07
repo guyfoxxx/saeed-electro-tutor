@@ -1,0 +1,23 @@
+{
+  "name": "saeed-electro-tutor",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "build": "tsc -p .",
+    "test": "tsx test/run-tests.ts",
+    "publish": "npx wrangler publish"
+  },
+  "dependencies": {
+    "undici": "^6.19.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "tsx": "^4.19.2",
+    "wrangler": "^3.80.0",
+    "@types/node": "^22.7.7"
+  }
+}

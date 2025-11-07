@@ -1,0 +1,1 @@
+import type { Purpose } from '../../models/router'; export function classifyIntent(t:string):Purpose{const x=t.toLowerCase(); if(/\b(فرمول|formula)\b/.test(x))return'formula'; if(/\b(مقایسه|compare|vs\b)\b/.test(x))return'comparison'; if(/\b(طراحی|design|مدار)\b/.test(x))return'design'; if(/\b(مفهوم|concept)\b/.test(x))return'concept'; return'general';}\n

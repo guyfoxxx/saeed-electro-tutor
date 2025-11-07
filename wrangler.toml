@@ -1,0 +1,21 @@
+name = "saeed-electro-tutor"
+main = "src/index.ts"
+compatibility_date = "2025-11-01"
+workers_dev = true
+account_id = "377d2b41a1964505c894bd5e2bfce119"
+
+[vars]
+BOT_NAME = "Saeed"
+ENV = "production"
+
+[[kv_namespaces]]
+binding = "USER_DB"
+id = "2a49d1d1fd5a4830aa56c39a0a98ac93"
+
+[[kv_namespaces]]
+binding = "QBANK_DB"
+id = "c55e785d7dbf4a97a5b0b42c46473c0f"
+
+[ai]
+binding = "AI"
+# You can also configure models in Cloudflare dashboard if needed.

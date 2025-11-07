@@ -1,0 +1,1 @@
+import assert from 'assert/strict'; import { parseDSL } from '../src/utils/parser'; assert.doesNotThrow(()=>parseDSL('R 10 10 R1\nC 20 30 C1')); let bad=false; try{parseDSL('bad');}catch{bad=true;} assert.ok(bad); console.log('dsl.test OK');\n

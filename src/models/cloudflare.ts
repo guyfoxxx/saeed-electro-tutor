@@ -1,0 +1,1 @@
+export async function cfInfer(ai:Ai,model:string,input:string){const r=await ai.run(model as any,{messages:[{role:'user',content:input}]});return (r as any).response||(r as any).result||JSON.stringify(r);}\n

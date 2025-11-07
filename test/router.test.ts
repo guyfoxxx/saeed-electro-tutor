@@ -1,0 +1,1 @@
+import assert from 'assert/strict'; import worker from '../src/index'; const env:any={ AI:{ run:async()=>({response:'ok'}) }, TELEGRAM_BOT_TOKEN:'x', USER_DB:{} as any, QBANK_DB:{} as any }; const res=await worker.fetch(new Request('http://example.com/diag'), env, {} as any); assert.equal(res.status,200); console.log('router.test OK');\n
